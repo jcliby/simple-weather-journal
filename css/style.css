@@ -1,0 +1,125 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+#main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+}
+
+#post-scroll-container {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(#afafaf, #585858);
+}
+
+#zip-container {
+  grid-area: 1 / 1 / 4 / 2;
+  background: radial-gradient(#fff080, #e07ed5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#location-container {
+  grid-area: 1 / 2 / 2 / 3;
+  background: radial-gradient(#ff8989, #7edce0);
+}
+#temperature-container {
+  grid-area: 2 / 2 / 3 / 3;
+  background: radial-gradient(#00baff, #7d3a89);
+}
+#details-container {
+  grid-area: 3 / 2 / 4 / 3;
+  background: radial-gradient(#db71ef, #982b2b);
+}
+#enter-feelings-container {
+  grid-area: 4 / 1 / 6 / 3;
+  background: radial-gradient(#53b42f, #5cb4ae);
+  display: grid;
+  grid-template-rows: 80% 20%;
+  padding: 20px;
+}
+
+.info-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 5px 20px 5px 5px;
+  text-align: right;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15pt;
+}
+
+::placeholder {
+  color: black;
+  font-style: italic;
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15pt;
+  text-align: right;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background: transparent;
+  border: 2px solid black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15pt;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+button {
+  background: transparent;
+  border: 2px solid black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15pt;
+  justify-self: flex-end;
+}
+
+.journal-post {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px 20px 10px 20px;
+}
+
+.journal-post h1 {
+  font-size: 15pt;
+  color: #ffc400;
+  font-weight: normal;
+}
+
+.journal-post h2 {
+  font-size: 15pt;
+  font-weight: normal;
+  text-align: right;
+}
+
+.journal-post p {
+  font-size: 10pt;
+  font-weight: normal;
+  font-style: italic;
+  padding: 20px 20px 30px 20px;
+}
+
+hr {
+  border: 1px dashed black;
+}
