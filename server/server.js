@@ -21,8 +21,13 @@ app.use(cors());
 app.use(express.static('public'));
 
 // Spin up the server
-// Callback to debug
+const port = 8000;
+const server = app.listen(port, listening);
 
+// Callback to debug
+function listening() {
+  console.log(`server running on localhost: ${port}`);
+}
 // Initialize all route with a callback function
 
 // Callback function to complete GET '/all'
